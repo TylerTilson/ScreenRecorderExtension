@@ -1,0 +1,17 @@
+body {
+    width: 200px;
+    height: 100px;
+    font-family: AvenirNext;
+    text-align: center;
+}
+
+button {
+    width: 60%;
+    height: 40%;
+    display: block;
+    border-radius: 40px;
+    background-color: #7cb740;
+    font-size: 20px;
+    color:white;
+    margin: auto;
+}

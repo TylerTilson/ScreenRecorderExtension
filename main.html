@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Screen</title>
+
+    <script src="fontawesome.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="videoChoiceArea">
+            <div class="combineArea">
+              <div class="switch-field center">
+                  <input type="radio" id="radio-combined" name="switch-video-input" value="combined" checked/>
+                  <label for="radio-combined"><i class="fas fa-desktop"></i><i class="fas fa-camera"></i><br />Screen and Camera</label>
+              </div>
+            </div>
+            <div class="screenOnlyArea">
+              <div class="switch-field center">
+                  <input type="radio" id="radio-screen" name="switch-video-input" value="screen"/>
+                  <label for="radio-screen"><i class="fas fa-desktop"></i><br />Screen</label>
+                </div>
+            </div>
+            <div class="cameraOnlyArea">
+              <div class="switch-field center">
+                  <input type="radio" id="radio-camera" name="switch-video-input" value="camera" />
+                  <label for="radio-camera"><i class="fas fa-camera"></i><br />Camera</label>
+                </div>
+            </div>
+        </div>
+        <div class="audioChoiceArea">
+          <div class="audioChoiceTxtArea">
+            <label class="center">Microphone Audio</label>
+          </div>
+          <div class="audoChoiceIconArea">
+            <label class="center"><i class="fas fa-volume-up"></i></label>
+          </div>
+          <div class="audioChoiceSliderArea">
+            <label class="switch center">
+                <input id="mic-audio" type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="buttonArea text-center">
+          <div id="recordStartArea" class="recButtonDiv">
+           <button id='start_submit' class="recButton center">Start Recording</button>
+          </div>
+          <div style="text-align: center;">
+            <a href="preview.html" target="_blank">See All Recordings</a>
+          </div>
+          <div id="recordStopArea" class="recButtonDiv">
+            <button id='stop-recording' class="recButton center">Stop Recording</button>
+           </div>
+        </div>
+      </div>
+      <script src="RecordRTC/DiskStorage.js"></script>
+      <script src="main.js"></script>
+  </body>
+</html>
